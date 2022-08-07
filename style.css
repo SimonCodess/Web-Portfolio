@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:wght@400;500&family=Montserrat:wght@100;200;300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    cursor: none;
+}
+
+:root {
+    --background: black;
+    --color-main: white;
+}
+
+body {
+    color: var(--color-main);
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: "Montserrat", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+
+.wrapper {
+    height: 100vh;
+    width: 100%;
+
+}
+
+.nav {
+    width: 100%;
+    height: 20vh;
+    background-color: rgba(0, 0, 0, 0.9);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+
+}
+
+.logoMain {
+    opacity: 0;
+    transition: .5s;
+    mix-blend-mode: difference;
+
+
+}
+
+.darker {
+    width: 100%;
+    height: 60vh;
+    background-color: rgba(0, 0, 0, 0.9);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-right: 2rem;
+}
+
+.footer {
+    width: 100%;
+    height: 20vh;
+    background-color: rgba(0, 0, 0, 0.9);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+.quote {
+    font-family: "Ibarra Real Nova";
+    font-weight: 200;
+    font-size: 1.125rem;
+    max-width: 11%;
+    opacity: 80%;
+    transition: 1s;
+    opacity: 0;
+    text-decoration: none;
+    color: white;
+    mix-blend-mode:difference;
+
+
+}
+
+.footer a {
+    margin-top: .5rem;
+    text-decoration: underline;
+
+}
+
+.chapter {
+    margin-top: 2rem;
+    font-family: "Ibarra Real Nova";
+    font-weight: 200;
+    font-size: 1rem;
+    text-align: center;
+    opacity: 80%;
+    opacity: 0;
+
+
+
+}
+
+.main-text {
+    font-size: 6rem;
+    letter-spacing: 6.5rem;
+    font-weight: 600;
+    text-align: center;
+    margin-right: -2.5rem;
+    margin-bottom: 3rem;
+    margin-top: .5rem;
+    opacity: 0;
+    mix-blend-mode: difference;
+
+
+}
+
+.navigation {
+    width: 10%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    transform: translateX(-100px);
+}
+
+.navigation a {
+    font-family: "Ibarra Real Nova";
+    margin-top: 4rem;
+    margin-left: 2rem;
+    text-decoration: none;
+    opacity: 60%;
+    font-size: 1.125rem;
+    transition: .3s;
+    color: white;
+
+}
+
+.navigation a:hover {
+    opacity: 100%;
+}
+.navigation .selectedLink{
+    opacity: 100%;
+}
+.fader {
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    background: black;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    opacity: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* Cursor Styling */
+.cursor {
+    position: fixed;
+    background-color: none;
+    border: 2px solid rgb(192, 192, 192);
+    mix-blend-mode: difference;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 99;
+    transition: all 100ms ease-out;
+    pointer-events: none;
+    left: 0;
+    top: 0;
+    transform: translate(calc(-50% + 15px), -50%);
+  }
+  .cursor-inner {
+    width: 5px;
+    height: 5px;
+    border-radius: 100%;
+    background-color: rgb(192, 192, 192);
+  }
+  .hover {
+    background-color: rgb(192, 192, 192);
+    width: 50px;
+    height: 50px;
+  }
+.social-media,.work{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 1;
+    opacity: 0;
+}
+.media{
+    height: 50px;
+    width: 50px;
+    background: none;
+    border: 2px dashed #ffffff80;
+    border-radius: 100%;
+    margin-inline: 2rem;
+    transition: .3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.media i{
+    opacity: .8;
+    padding: 10px;
+}
+.media i:hover{
+    mix-blend-mode: difference;
+    opacity: 1;
+}
+.media:hover{
+    background: white;
+    border: 2px solid dashed white;
+    mix-blend-mode: difference;
+
+}
+/* Organize CSS, create responsible view for (4K, 1080p, 720p, 480p, mobile, tablet)
