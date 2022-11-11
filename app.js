@@ -70,7 +70,7 @@ prologue.addEventListener("click", () => {
   gsap.to(".fader", { display: "flex", duration: 0.5 });
   gsap.to(".fader", { opacity: 1, duration: 2 });
   setTimeout(() => {
-    window.location.href = "http://127.0.0.1:5500/self.html"; // Change the links in future !!
+    window.location.href = "http://127.0.0.1:5500/index.html"; // Change the links in future !!
   }, 2000);
 });
 firstPage.addEventListener("click", () => {
